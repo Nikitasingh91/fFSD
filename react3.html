@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="a1">
+
+    </div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+   
+    <script type="text/babel">
+const a=document.getElementById("a1")
+const root=ReactDOM.createRoot(a)
+const h1=<h1>hee</h1>
+const li=<li>sss</li>
+const li1=<li>dddd</li>
+const ul=<ul>{li}{li1}</ul>
+root.render([h1,ul])
+    </script>
+</body>
+</html>
